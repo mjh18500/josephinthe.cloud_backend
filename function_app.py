@@ -1,6 +1,10 @@
+import logging
+import uuid
+import json
+from azure.data.tables import TableServiceClient
+import azure.functions as func
+import os
 
-
-app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
 @app.route(route="http_trigger")
 def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
