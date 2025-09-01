@@ -18,7 +18,7 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
         # Connect to the table
         connection_string = os.getenv("AZURE_COSMOS_CONNECTIONSTRING")
         table_service = TableServiceClient.from_connection_string(conn_str=connection_string)
-        table_client = table_service.get_table_client(table_name="dev00cosmosdbtable")
+        table_client = table_service.get_table_client(table_name="backendcosmosdb010table")
 
         try:
             entity = table_client.get_entity(partition_key=partition_key, row_key=row_key)
