@@ -8,11 +8,11 @@ It’s a serverless Azure Function App exposed securely through Azure API Manage
 
 The backend handles each site visit by:
 
-    1. Receiving an API call from the frontend (React + Vite + TypeScript).
+    - Receiving an API call from the frontend (React + Vite + TypeScript).
 
-    2. Incrementing a counter stored in the database.
+    - Incrementing a counter stored in the database.
 
-    3. Returning the updated visitor count in real time to be displayed on the site.
+    - Returning the updated visitor count in real time to be displayed on the site.
 
 This project demonstrates cloud-native, production-grade design:
 
