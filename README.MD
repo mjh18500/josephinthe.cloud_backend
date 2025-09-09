@@ -8,65 +8,65 @@ It’s a serverless Azure Function App exposed securely through Azure API Manage
 
 The backend handles each site visit by:
 
-Receiving an API call from the frontend (React + Vite + TypeScript).
+    1. Receiving an API call from the frontend (React + Vite + TypeScript).
 
-Incrementing a counter stored in the database.
+    2. Incrementing a counter stored in the database.
 
-Returning the updated visitor count in real time to be displayed on the site.
+    3. Returning the updated visitor count in real time to be displayed on the site.
 
 This project demonstrates cloud-native, production-grade design:
 
-✅ Serverless Functions – event-driven execution, cost-efficient.
+    ✅ Serverless Functions – event-driven execution, cost-efficient.
 
-✅ Azure API Management – secure API gateway with rate limiting and CORS configuration.
+    ✅ Azure API Management – secure API gateway with rate limiting and CORS configuration.
 
-✅ Database Persistence – ensures visitor counts survive restarts and scale events.
+    ✅ Database Persistence – ensures visitor counts survive restarts and scale events.
 
-✅ Infrastructure as Code (Terraform) – fully automated deployments.
+    ✅ Infrastructure as Code (Terraform) – fully automated deployments.
 
-✅ CI/CD (GitHub Actions) – test and deploy changes seamlessly.
+    ✅ CI/CD (GitHub Actions) – test and deploy changes seamlessly.
 
 🛠 Tech Stack
 
-Language: Python
+    - Language: Python
 
-Cloud Platform: Microsoft Azure
+    - Cloud Platform: Microsoft Azure
 
-Services Used:
+    - Services Used:
 
-Azure Function App (HTTP Trigger)
+        - Azure Function App (HTTP Trigger)
 
-Azure API Management
+        - Azure API Management
 
-Azure CosmosDB / Table API
+        - Azure CosmosDB / Table API
 
-Azure Storage Account (logs & configs)
+        - Azure Storage Account (logs & configs)
 
-CI/CD: GitHub Actions
+    - CI/CD: GitHub Actions
 
-IaC: Terraform
+    - IaC: Terraform
 
 🧪 Key Features
 
-Visitor Counter API
+- Visitor Counter API
 
-✅ Returns updated visitor count
+    ✅ Returns updated visitor count
 
-✅ Persists values in DB
+    ✅ Persists values in DB
 
-✅ Handles malformed requests gracefully (returns error response)
+    ✅ Handles malformed requests gracefully (returns error response)
 
-✅ Edge-case handling: initializes counter if missing
+    ✅ Edge-case handling: initializes counter if missing
 
-✅ CI pipeline runs on each push
+    ✅ CI pipeline runs on each push
 
 🔒 Security
 
-API is protected with subscription keys through Azure APIM.
+    - API is protected with subscription keys through Azure APIM.
 
-Keys are stored securely as GitHub Secrets and injected into CI/CD pipelines.
+    - Keys are stored securely as GitHub Secrets and injected into CI/CD pipelines.
 
-CORS policies configured to only allow my frontend domain.
+    - CORS policies configured to only allow my frontend domain.
 
 🌟 Why I Built This
 
@@ -74,19 +74,19 @@ I wanted a project that demonstrates real-world cloud engineering skills.
 
 This backend shows:
 
-How to securely expose a Function App via APIM
+    - How to securely expose a Function App via APIM
 
-How to persist state in a stateless architecture
+    - How to persist state in a stateless architecture
 
-How to automate infrastructure deployments with Terraform
+    - How to automate infrastructure deployments with Terraform
 
-How to test and validate APIs with CI/CD pipelines
+    - How to test and validate APIs with CI/CD pipelines
 
 In other words, it’s a production-ready microservice that happens to run a fun feature (tracking site visitors).
 
 📈 Results
 
-Visitors to josephinthe.cloud see a live counter that updates instantly.
+    - Visitors to josephinthe.cloud see a live counter that updates instantly.
 
-Backend scales automatically with traffic.
+    - Backend scales automatically with traffic.
 
