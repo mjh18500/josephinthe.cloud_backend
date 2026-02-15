@@ -1,10 +1,10 @@
-🌐 Visitor Counter Backend (Azure Function + API Management)
+Visitor Counter Backend (Azure Function + API Management)
 
 This backend powers the visitor counter for my cloud portfolio site: josephinthe.cloud.
 
 It’s a serverless Azure Function App exposed securely through Azure API Management (APIM), with a persistent database to track visitor counts.
 
-🚀 Project Overview
+Project Overview
 
 The backend handles each site visit by:
 
@@ -16,17 +16,17 @@ The backend handles each site visit by:
 
 This project demonstrates cloud-native, production-grade design:
 
-    ✅ Serverless Functions – event-driven execution, cost-efficient.
+    Serverless Functions – event-driven execution, cost-efficient.
 
-    ✅ Azure API Management – secure API gateway with rate limiting and CORS configuration.
+    Azure API Management – secure API gateway with rate limiting and CORS configuration.
 
-    ✅ Database Persistence – ensures visitor counts survive restarts and scale events.
+    Database Persistence – ensures visitor counts survive restarts and scale events.
 
-    ✅ Infrastructure as Code (Terraform) – fully automated deployments.
+    Infrastructure as Code (Terraform) – fully automated deployments.
 
-    ✅ CI/CD (GitHub Actions) – test and deploy changes seamlessly.
+    CI/CD (GitHub Actions) – test and deploy changes seamlessly.
 
-🛠 Tech Stack
+Tech Stack
 
     - Language: Python
 
@@ -46,21 +46,21 @@ This project demonstrates cloud-native, production-grade design:
 
     - IaC: Terraform
 
-🧪 Key Features
+Key Features
 
 - Visitor Counter API
 
-    ✅ Returns updated visitor count
+    Returns updated visitor count
 
-    ✅ Persists values in DB
+    Persists values in DB
 
-    ✅ Handles malformed requests gracefully (returns error response)
+    Handles malformed requests gracefully (returns error response)
 
-    ✅ Edge-case handling: initializes counter if missing
+    Edge-case handling: initializes counter if missing
 
-    ✅ CI pipeline runs on each push
+    CI pipeline runs on each push
 
-🔒 Security
+Security
 
     - API is protected with subscription keys through Azure APIM.
 
@@ -68,7 +68,7 @@ This project demonstrates cloud-native, production-grade design:
 
     - CORS policies configured to only allow my frontend domain.
 
-🌟 Why I Built This
+Why I Built This
 
 I wanted a project that demonstrates real-world cloud engineering skills.
 
@@ -84,7 +84,7 @@ This backend shows:
 
 In other words, it’s a production-ready microservice that happens to run a fun feature (tracking site visitors).
 
-📈 Results
+Results
 
     - Visitors to josephinthe.cloud see a live counter that updates instantly.
 
